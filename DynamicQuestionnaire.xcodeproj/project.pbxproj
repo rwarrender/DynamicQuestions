@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		797B54CD18D354290016642A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797B54CC18D354290016642A /* Foundation.framework */; };
+		797B54CF18D354290016642A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797B54CE18D354290016642A /* CoreGraphics.framework */; };
+		797B54D118D354290016642A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797B54D018D354290016642A /* UIKit.framework */; };
+		797B54D718D354290016642A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 797B54D518D354290016642A /* InfoPlist.strings */; };
+		797B54D918D354290016642A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 797B54D818D354290016642A /* main.m */; };
+		797B54DD18D354290016642A /* VRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 797B54DC18D354290016642A /* VRAppDelegate.m */; };
+		797B54E018D3542A0016642A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 797B54DE18D3542A0016642A /* Main.storyboard */; };
+		797B54E518D3542A0016642A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 797B54E418D3542A0016642A /* Images.xcassets */; };
+		797B54EC18D3542A0016642A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797B54EB18D3542A0016642A /* XCTest.framework */; };
+		797B54ED18D3542A0016642A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797B54CC18D354290016642A /* Foundation.framework */; };
+		797B54EE18D3542A0016642A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797B54D018D354290016642A /* UIKit.framework */; };
+		797B54F618D3542A0016642A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 797B54F418D3542A0016642A /* InfoPlist.strings */; };
+		797B54F818D3542A0016642A /* DynamicQuestionnaireTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 797B54F718D3542A0016642A /* DynamicQuestionnaireTests.m */; };
+		797B550318D3544A0016642A /* VRQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 797B550218D3544A0016642A /* VRQuestion.m */; };
+		797B550618D354570016642A /* VRAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 797B550518D354570016642A /* VRAnswer.m */; };
+		797B550918D35ADD0016642A /* set1.json in Resources */ = {isa = PBXBuildFile; fileRef = 797B550718D355050016642A /* set1.json */; };
+		797B550C18D35C2C0016642A /* VRQuestionnaire.m in Sources */ = {isa = PBXBuildFile; fileRef = 797B550B18D35C2C0016642A /* VRQuestionnaire.m */; };
+		797B550F18D3647D0016642A /* VRQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 797B550E18D3647D0016642A /* VRQuestionViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		797B54EF18D3542A0016642A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 797B54C118D354280016642A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 797B54C818D354290016642A;
+			remoteInfo = DynamicQuestionnaire;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		797B54C918D354290016642A /* DynamicQuestionnaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicQuestionnaire.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		797B54CC18D354290016642A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		797B54CE18D354290016642A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		797B54D018D354290016642A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		797B54D418D354290016642A /* DynamicQuestionnaire-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DynamicQuestionnaire-Info.plist"; sourceTree = "<group>"; };
+		797B54D618D354290016642A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		797B54D818D354290016642A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		797B54DA18D354290016642A /* DynamicQuestionnaire-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DynamicQuestionnaire-Prefix.pch"; sourceTree = "<group>"; };
+		797B54DB18D354290016642A /* VRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VRAppDelegate.h; sourceTree = "<group>"; };
+		797B54DC18D354290016642A /* VRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VRAppDelegate.m; sourceTree = "<group>"; };
+		797B54DF18D3542A0016642A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		797B54E418D3542A0016642A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		797B54EA18D3542A0016642A /* DynamicQuestionnaireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicQuestionnaireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		797B54EB18D3542A0016642A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		797B54F318D3542A0016642A /* DynamicQuestionnaireTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DynamicQuestionnaireTests-Info.plist"; sourceTree = "<group>"; };
+		797B54F518D3542A0016642A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		797B54F718D3542A0016642A /* DynamicQuestionnaireTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicQuestionnaireTests.m; sourceTree = "<group>"; };
+		797B550118D3544A0016642A /* VRQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRQuestion.h; sourceTree = "<group>"; };
+		797B550218D3544A0016642A /* VRQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRQuestion.m; sourceTree = "<group>"; };
+		797B550418D354570016642A /* VRAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRAnswer.h; sourceTree = "<group>"; };
+		797B550518D354570016642A /* VRAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRAnswer.m; sourceTree = "<group>"; };
+		797B550718D355050016642A /* set1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = set1.json; sourceTree = "<group>"; };
+		797B550A18D35C2C0016642A /* VRQuestionnaire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRQuestionnaire.h; sourceTree = "<group>"; };
+		797B550B18D35C2C0016642A /* VRQuestionnaire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRQuestionnaire.m; sourceTree = "<group>"; };
+		797B550D18D3647D0016642A /* VRQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRQuestionViewController.h; sourceTree = "<group>"; };
+		797B550E18D3647D0016642A /* VRQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRQuestionViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		797B54C618D354290016642A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797B54CF18D354290016642A /* CoreGraphics.framework in Frameworks */,
+				797B54D118D354290016642A /* UIKit.framework in Frameworks */,
+				797B54CD18D354290016642A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797B54E718D3542A0016642A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797B54EC18D3542A0016642A /* XCTest.framework in Frameworks */,
+				797B54EE18D3542A0016642A /* UIKit.framework in Frameworks */,
+				797B54ED18D3542A0016642A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		797B54C018D354280016642A = {
+			isa = PBXGroup;
+			children = (
+				797B54D218D354290016642A /* DynamicQuestionnaire */,
+				797B54F118D3542A0016642A /* DynamicQuestionnaireTests */,
+				797B54CB18D354290016642A /* Frameworks */,
+				797B54CA18D354290016642A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		797B54CA18D354290016642A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				797B54C918D354290016642A /* DynamicQuestionnaire.app */,
+				797B54EA18D3542A0016642A /* DynamicQuestionnaireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		797B54CB18D354290016642A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				797B54CC18D354290016642A /* Foundation.framework */,
+				797B54CE18D354290016642A /* CoreGraphics.framework */,
+				797B54D018D354290016642A /* UIKit.framework */,
+				797B54EB18D3542A0016642A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		797B54D218D354290016642A /* DynamicQuestionnaire */ = {
+			isa = PBXGroup;
+			children = (
+				797B54DB18D354290016642A /* VRAppDelegate.h */,
+				797B54DC18D354290016642A /* VRAppDelegate.m */,
+				797B550D18D3647D0016642A /* VRQuestionViewController.h */,
+				797B550E18D3647D0016642A /* VRQuestionViewController.m */,
+				797B551218D370A80016642A /* Models */,
+				797B54DE18D3542A0016642A /* Main.storyboard */,
+				797B54E418D3542A0016642A /* Images.xcassets */,
+				797B54D318D354290016642A /* Supporting Files */,
+			);
+			path = DynamicQuestionnaire;
+			sourceTree = "<group>";
+		};
+		797B54D318D354290016642A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				797B550718D355050016642A /* set1.json */,
+				797B54D418D354290016642A /* DynamicQuestionnaire-Info.plist */,
+				797B54D518D354290016642A /* InfoPlist.strings */,
+				797B54D818D354290016642A /* main.m */,
+				797B54DA18D354290016642A /* DynamicQuestionnaire-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		797B54F118D3542A0016642A /* DynamicQuestionnaireTests */ = {
+			isa = PBXGroup;
+			children = (
+				797B54F718D3542A0016642A /* DynamicQuestionnaireTests.m */,
+				797B54F218D3542A0016642A /* Supporting Files */,
+			);
+			path = DynamicQuestionnaireTests;
+			sourceTree = "<group>";
+		};
+		797B54F218D3542A0016642A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				797B54F318D3542A0016642A /* DynamicQuestionnaireTests-Info.plist */,
+				797B54F418D3542A0016642A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		797B551218D370A80016642A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				797B550A18D35C2C0016642A /* VRQuestionnaire.h */,
+				797B550B18D35C2C0016642A /* VRQuestionnaire.m */,
+				797B550118D3544A0016642A /* VRQuestion.h */,
+				797B550218D3544A0016642A /* VRQuestion.m */,
+				797B550418D354570016642A /* VRAnswer.h */,
+				797B550518D354570016642A /* VRAnswer.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		797B54C818D354290016642A /* DynamicQuestionnaire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 797B54FB18D3542A0016642A /* Build configuration list for PBXNativeTarget "DynamicQuestionnaire" */;
+			buildPhases = (
+				797B54C518D354290016642A /* Sources */,
+				797B54C618D354290016642A /* Frameworks */,
+				797B54C718D354290016642A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicQuestionnaire;
+			productName = DynamicQuestionnaire;
+			productReference = 797B54C918D354290016642A /* DynamicQuestionnaire.app */;
+			productType = "com.apple.product-type.application";
+		};
+		797B54E918D3542A0016642A /* DynamicQuestionnaireTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 797B54FE18D3542A0016642A /* Build configuration list for PBXNativeTarget "DynamicQuestionnaireTests" */;
+			buildPhases = (
+				797B54E618D3542A0016642A /* Sources */,
+				797B54E718D3542A0016642A /* Frameworks */,
+				797B54E818D3542A0016642A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				797B54F018D3542A0016642A /* PBXTargetDependency */,
+			);
+			name = DynamicQuestionnaireTests;
+			productName = DynamicQuestionnaireTests;
+			productReference = 797B54EA18D3542A0016642A /* DynamicQuestionnaireTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		797B54C118D354280016642A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VR;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Vivid Reflection";
+				TargetAttributes = {
+					797B54E918D3542A0016642A = {
+						TestTargetID = 797B54C818D354290016642A;
+					};
+				};
+			};
+			buildConfigurationList = 797B54C418D354290016642A /* Build configuration list for PBXProject "DynamicQuestionnaire" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 797B54C018D354280016642A;
+			productRefGroup = 797B54CA18D354290016642A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				797B54C818D354290016642A /* DynamicQuestionnaire */,
+				797B54E918D3542A0016642A /* DynamicQuestionnaireTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		797B54C718D354290016642A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797B550918D35ADD0016642A /* set1.json in Resources */,
+				797B54E518D3542A0016642A /* Images.xcassets in Resources */,
+				797B54D718D354290016642A /* InfoPlist.strings in Resources */,
+				797B54E018D3542A0016642A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797B54E818D3542A0016642A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797B54F618D3542A0016642A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		797B54C518D354290016642A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797B550618D354570016642A /* VRAnswer.m in Sources */,
+				797B550F18D3647D0016642A /* VRQuestionViewController.m in Sources */,
+				797B54DD18D354290016642A /* VRAppDelegate.m in Sources */,
+				797B54D918D354290016642A /* main.m in Sources */,
+				797B550318D3544A0016642A /* VRQuestion.m in Sources */,
+				797B550C18D35C2C0016642A /* VRQuestionnaire.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		797B54E618D3542A0016642A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797B54F818D3542A0016642A /* DynamicQuestionnaireTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		797B54F018D3542A0016642A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 797B54C818D354290016642A /* DynamicQuestionnaire */;
+			targetProxy = 797B54EF18D3542A0016642A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		797B54D518D354290016642A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				797B54D618D354290016642A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		797B54DE18D3542A0016642A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				797B54DF18D3542A0016642A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		797B54F418D3542A0016642A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				797B54F518D3542A0016642A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		797B54F918D3542A0016642A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		797B54FA18D3542A0016642A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		797B54FC18D3542A0016642A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DynamicQuestionnaire/DynamicQuestionnaire-Prefix.pch";
+				INFOPLIST_FILE = "DynamicQuestionnaire/DynamicQuestionnaire-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		797B54FD18D3542A0016642A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DynamicQuestionnaire/DynamicQuestionnaire-Prefix.pch";
+				INFOPLIST_FILE = "DynamicQuestionnaire/DynamicQuestionnaire-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		797B54FF18D3542A0016642A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DynamicQuestionnaire.app/DynamicQuestionnaire";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DynamicQuestionnaire/DynamicQuestionnaire-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DynamicQuestionnaireTests/DynamicQuestionnaireTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		797B550018D3542A0016642A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DynamicQuestionnaire.app/DynamicQuestionnaire";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DynamicQuestionnaire/DynamicQuestionnaire-Prefix.pch";
+				INFOPLIST_FILE = "DynamicQuestionnaireTests/DynamicQuestionnaireTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		797B54C418D354290016642A /* Build configuration list for PBXProject "DynamicQuestionnaire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797B54F918D3542A0016642A /* Debug */,
+				797B54FA18D3542A0016642A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		797B54FB18D3542A0016642A /* Build configuration list for PBXNativeTarget "DynamicQuestionnaire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797B54FC18D3542A0016642A /* Debug */,
+				797B54FD18D3542A0016642A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		797B54FE18D3542A0016642A /* Build configuration list for PBXNativeTarget "DynamicQuestionnaireTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797B54FF18D3542A0016642A /* Debug */,
+				797B550018D3542A0016642A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 797B54C118D354280016642A /* Project object */;
+}

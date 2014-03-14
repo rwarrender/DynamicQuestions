@@ -1,0 +1,44 @@
+[
+ {
+ "identifier": "q1",
+ "text"     : "Do you like comic books?",
+ "yes"      : "q2",
+ "no"       : "q4",
+ },
+ {
+ "identifier": "q2",
+ "text"     : "Does your favourite comic book character have super powers?",
+ "yes"      : "q4",
+ "no"       : "q3",
+ },
+ {
+ "identifier": "q3",
+ "text"     : "Does your favourite comic book character like bats?",
+ "yes"      : "q4",
+ "no"       : "q4",
+ },
+ {
+ "identifier": "q4",
+ "text"     : "Do you like coffee?",
+ "yes"      : "q5",
+ "no"       : "q6",
+ },
+ {
+ "identifier": "q5",
+ "text"     : "Do you use an app to pay for coffee?",
+ "yes"      : "q6",
+ "no"       : "q6",
+ },
+ {
+ "identifier": "q6",
+ "text"     : "Do you like good code?",
+ "yes"      : "q7",
+ "no"       : "",
+ },
+ {
+ "identifier": "q7",
+ "text"     : "Should Richard put this on GitHub?",
+ "yes"      : "",
+ "no"       : "",
+ },
+]

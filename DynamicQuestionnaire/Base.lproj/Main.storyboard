@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="nCB-Sa-thU">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="kLd-0t-Cjb">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="nCB-Sa-thU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="X5g-Zj-WkW">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IzZ-n0-b1P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="121"/>
+        </scene>
+        <!--Question View Controller - Q1-->
+        <scene sceneID="PYd-yC-4Lb">
+            <objects>
+                <viewController storyboardIdentifier="QuestionViewController" id="atU-gL-EVY" customClass="VRQuestionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7nQ-mq-xat"/>
+                        <viewControllerLayoutGuide type="bottom" id="JzE-U7-j5R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sCj-Cs-ODE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Question text goes here." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="278" translatesAutoresizingMaskIntoConstraints="NO" id="ZMA-bW-AXG">
+                                <rect key="frame" x="20" y="92" width="278" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bse-n9-7Wi">
+                                <rect key="frame" x="169" y="121" width="29" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="NO">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="noPressed:" destination="atU-gL-EVY" eventType="touchUpInside" id="fWh-7J-BS8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGh-sN-NWm">
+                                <rect key="frame" x="119" y="121" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="YES">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="yesPressed:" destination="atU-gL-EVY" eventType="touchUpInside" id="qRn-sy-pGI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZMA-bW-AXG" firstAttribute="top" secondItem="7nQ-mq-xat" secondAttribute="bottom" constant="28" id="Am9-H1-usz"/>
+                            <constraint firstAttribute="trailing" secondItem="bse-n9-7Wi" secondAttribute="trailing" constant="120" id="CZa-nN-bWB"/>
+                            <constraint firstItem="bse-n9-7Wi" firstAttribute="leading" secondItem="UGh-sN-NWm" secondAttribute="trailing" constant="20" id="LCZ-hK-3lH"/>
+                            <constraint firstItem="UGh-sN-NWm" firstAttribute="width" secondItem="bse-n9-7Wi" secondAttribute="width" id="XNg-Co-Qkf"/>
+                            <constraint firstAttribute="trailing" secondItem="ZMA-bW-AXG" secondAttribute="trailing" constant="20" id="Zx7-BB-fQu"/>
+                            <constraint firstItem="ZMA-bW-AXG" firstAttribute="leading" secondItem="sCj-Cs-ODE" secondAttribute="leading" constant="20" id="bze-aW-GKn"/>
+                            <constraint firstItem="UGh-sN-NWm" firstAttribute="top" secondItem="ZMA-bW-AXG" secondAttribute="bottom" constant="8" id="jps-iD-cCQ"/>
+                            <constraint firstItem="bse-n9-7Wi" firstAttribute="leading" secondItem="UGh-sN-NWm" secondAttribute="trailing" constant="20" id="jqx-v1-Nch"/>
+                            <constraint firstItem="UGh-sN-NWm" firstAttribute="leading" secondItem="sCj-Cs-ODE" secondAttribute="leading" constant="119" id="q7H-kL-ind"/>
+                            <constraint firstItem="bse-n9-7Wi" firstAttribute="top" secondItem="ZMA-bW-AXG" secondAttribute="bottom" constant="8" id="vHt-TI-8KH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Q1" id="rr5-aj-FSA"/>
+                    <connections>
+                        <outlet property="label" destination="ZMA-bW-AXG" id="b6p-zn-pXd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lEy-fH-BRE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="573" y="48"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
